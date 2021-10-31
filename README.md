@@ -20,7 +20,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 - **Story:** Connects users with trending recipes and food inspiration. Users will be able to interact through the comments and voting system, which encourage a sense of community.
 - **Market:** Anyone interested in food and cooking can use this app. Users are able to search for specific interests based on cuisine and diet.
 - **Habit:** Users will open and use this app whenever they want to find or share recipe ideas and instructions. Users both consume (view recipes) and create (post recipes).
-- **Scope:** <APP NAME> has a focus on posting and viewing recipes. The main feed acts as a trending page which allows users to interact with each other by reacting to recipe titles and photos.
+- **Scope:** (APP_NAME) has a focus on posting and viewing recipes. The main feed acts as a trending page which allows users to interact with each other by reacting to recipe titles and photos.
 
 
 ## Product Spec
