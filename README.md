@@ -1,7 +1,7 @@
 Original App Design Project - README Template
 ===
 
-# APP_NAME_HERE
+# Staple
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -20,7 +20,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 - **Story:** Connects users with trending recipes and food inspiration. Users will be able to interact through the comments and voting system, which encourage a sense of community.
 - **Market:** Anyone interested in food and cooking can use this app. Users are able to search for specific interests based on cuisine and diet.
 - **Habit:** Users will open and use this app whenever they want to find or share recipe ideas and instructions. Users both consume (view recipes) and create (post recipes).
-- **Scope:** (APP_NAME) has a focus on posting and viewing recipes. The main feed acts as a trending page which allows users to interact with each other by reacting to recipe titles and photos.
+- **Scope:** Staple has a focus on posting and viewing recipes. The main feed acts as a trending page which allows users to interact with each other by reacting to recipe titles and photos.
 
 
 ## Product Spec
@@ -47,6 +47,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 * User can view detailed recipes from the Edamam API
 * User can edit their profile picture
 * User can change their username and password
+* User can delete their account
 
 **Optional Nice-to-have Stories**
     
@@ -57,7 +58,6 @@ Allows those with a passion for cooking to connect through a dedicated social me
 * Configure autolayout to standardize view on devices
 * User can invite their contacts to join
 * User can upload video for recipe instructions
-* User can delete their account
 * User can select their cuisine preferences when making an account
 * User can set the cuisine type when uploading a post
 * User can view recipes automatically configured to their set preferences during account creation
@@ -66,10 +66,8 @@ Allows those with a passion for cooking to connect through a dedicated social me
 
 * Login Screen
    * User can enter their username and password to log in
-   <!--* User can be taken to the registration screen-->
 * Registration Screen
    * User can sign up to create a new account (username, password, email, and phone number)
-   <!--* User can go back to the login screen-->
 * Stream
     * User can view the past recipes (photos and titles) and the author's profile picture and name
     * User can upvote/downvote a recipe
@@ -80,7 +78,6 @@ Allows those with a passion for cooking to connect through a dedicated social me
     * User can log out
 * Creation
     * User can upload a photo, add a recipe title, add an ingredient list/recipe
-    <!--* User can choose whether to upload it to the server or cancel-->
 * Search
     * User can search for recipes or users in a text bar
     * User can view existing recipes from the Edamam API
@@ -90,13 +87,13 @@ Allows those with a passion for cooking to connect through a dedicated social me
 * Personal Profile Screen
     * User can view their username, profile picture, and number of posts
     * User can view photos of recipes
-    <!--* User can access a preferences screen-->
 * Detailed Recipe Screen
     * User can view a title, ingredient list, and instructions for a specific recipe
     * User can go back to the previous screen
 * User Preferences Screen
     * User can change their profile picture, username, and password
     * User can log out
+    * User can delete their account
 
 ### 3. Navigation
 
@@ -133,14 +130,108 @@ Allows those with a passion for cooking to connect through a dedicated social me
 * User Preferences Screen
     => Login Screen
 
-## Wireframes
-![](https://i.imgur.com/2buEA0g.jpg)
+## Wireframe
+![](https://i.imgur.com/mkxT16x.jpg)
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
-### Networking
-- [Add list of network requests by screen ]
+        
+#### User:
+| Property      | Type     | Description                                   |
+| ------------- | -------- | --------------------------------------------- |
+| username      | String*  | Username                                      |
+| password      | String*  | Password                                      |
+| email         | String   | User email                                    |
+| phoneNumber   | String   | User phone number                             |
+| profileImage  | File     | User profile picture                          |
+| numberOfPosts | Number   | Total number of posts by a user               |
+| createdAt     | DateTime | Date when user is created (default field)     |
+| updatedAt     | DateTime | Date when user is last updated (default field)|
+    
+#### Stream Post (Main Feed):
+| Property      | Type           | Description                                    |
+| ------------- | -------------  | ---------------------------------------------- |
+| objectID      | String         | Unique id for the user post (default field)    |
+| author        | Pointer (User) | Image author                                   |
+| recipeName    | String         | Recipe title                                   |
+| ingredientList| String         | Recipe ingredients                             |                 
+| recipeSteps   | String         | Recipe procedure                               |  
+| profileImage  | Pointer (User) | Image of the user profile                      |  
+| recipeImage   | File           | Recipe image that a user posts                 |
+| commentsCount | Number         | Number of comments on a post                   |
+| comments      | Pointer (Array)| Lists of comments on a post                    |
+| upvoteCount   | Number         | Number of upvotes on a post                    |
+| downvoteCount | Number         | Number of downvotes on a post                  |
+| createdAt     | DateTime       | Date when post is created (default field)      |
+| updatedAt     | DateTime       | Date when post is last updated (default field) |
+    
+#### Stream Comments (Main Feed):
+| Property  | Type           | Description                                      |
+| --------- | -------------- | ------------------------------------------------ |
+| objectID  | String         | Unique id for the comment                        |
+| post      | Pointer (Post) | Associated post                                  |
+| text      | String         | Comment text                                     |
+| author    | Pointer (User) | Comment author                                   |
+| createdAt | DateTime       | Date when comment is created (default field)     |
+| updatedAt | DateTime       | Date when comment is last updated (default field)|
+    
+### Networking    
+* Login Screen:
+    * (Read/GET) User logs into app
+      * User can also create new profile
+    
+* Registration Screen:
+    * (Create/POST) User signs up
+    
+* Stream:     
+    * (Read/Get) Read recipe name
+    * (Read/ GET) Read username 
+    * (Read/GET) Get a picture of the recipe
+    * (Create/POST) Create an upvote on a post
+    * (Delete) Delete existing upvote
+    * (Create/POST) Create an downvote on a post
+    * (Delete) Delete existing downvote
+    * (Create/POST) Create a comment on a post
+    * (Delete) Delete existing comment
+    
+    
+* Creation:
+    * (Create/POST) Create the name of the recipe 
+    * (Create/POST) Create ingredients' list of the recipe
+    * (Create/POST) Create recipe instructions
+    * (Create/POST) add a picture of the recipe
+    * (Create/POST) Submit the post
+    * (Delete) cancel the post
+
+* Search:
+    * (Read/GET) Search for the recipe
+    * (Read/GET) Search for the user
+    
+
+* Other User Profile Screen: 
+    * (Read/GET) Name of the user
+    * (Read/GET) Number of user's post
+    * (Read/GET) User's picture
+    * (Read/GET) Access detailed recipe by clicking picture objects
+    
+* Profile Screen:
+    * (Read/GET) Query logged in user object
+    * (Read/GET) Number of user's post
+    * (Read/GET) User's picture
+    * (Read/GET) Access detailed recipe by clicking picture objects
+    
+* Detailed Recipe Screen:
+    * (Read/GET) Name of the recipe
+    * (Read/GET) Ingredients of the recipe
+    * (Read/GET) Recipe instructions
+   
+* Preferences Screen: 
+    * (Update/PUT) Update user profile image
+    * (Update/PUT) Update Username
+    * (Update/PUT) Update Password
+    * (Delete/DELETE) Delete user profile
+    * (Create/POST) Lets a user log out
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
