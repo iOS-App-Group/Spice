@@ -233,5 +233,83 @@ Allows those with a passion for cooking to connect through a dedicated social me
     * (Delete/DELETE) Delete user profile
     * (Create/POST) Lets a user log out
 
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Basic snippets for Parse network requests:
+```
+// (Read/GET) Query all posts where user is author
+let query = PFQuery(className:"Post")
+query.whereKey("author", equalTo: currentUser)
+query.order(byDescending: "createdAt")
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+   if let error = error {
+      print(error.localizedDescription)
+   } else if let posts = posts {
+      print("Successfully retrieved \(posts.count) posts.")
+      // TODO: Do something with posts...
+   }
+}
+```
+
+```
+// (Read/GET) Create a post
+PFObject *post = [PFObject objectWithClassName:@"post"];
+post[@"title"] = @"Green Eggs & Ham";
+post[@"author"] = @"John Doe";
+post[@"instructions"] = @"the most enlightening of instructions"
+post[@"ingredients"] = @"the lovliest of ingredients"
+[post saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+  if (succeeded) {
+    // The object has been saved.
+  } else {
+    // There was a problem, check error.description
+  }
+}];
+```
+
+```
+// (Read/GET)
+// Fetch posts for a user's home feed
+PFQuery *query = [PFQuery queryWithClassName:@"post"];
+[query whereKey:@"author" equalTo:@"John Doe"];
+[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+  if (!error) {
+    // The find succeeded.
+    NSLog(@"Successfully retrieved %d scores.", objects.count);
+    // Do something with the found objects
+    for (PFObject *object in objects) {
+        NSLog(@"%@", object.objectId);
+    }
+  } else {
+    // Log details of the failure
+    NSLog(@"Error: %@ %@", error, [error userInfo]);
+  }
+}];
+```
+
+```
+// (Delete/DELETE)
+// Delete account
+[PFObject deleteAllInBackground:objectArray block:^(BOOL succeeded, NSError * _Nullable error) {
+    if (succeeded) {
+        // The array of objects was successfully deleted.
+    } else {
+        // There was an error. Check the errors localizedDescription.
+    }
+}];
+```
+
+```
+// (Update/Put)
+// Changing user's profile picture
+PFQuery *query = [PFQuery queryWithClassName:@"user"];
+
+// Retrieve the object by id
+[query getObjectInBackgroundWithId:@"John Doe"
+                             block:^(PFObject *user, NSError *error) {
+    // Now let's update it with some new data. In this case, profile picture
+    // will get sent to the cloud. Others haven't changed
+    user[@"username"] = @"xxDinoxx";
+    user[@"password"] = @"defSecure";
+    // keep going
+    [author saveInBackground];
+}];
+```
