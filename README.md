@@ -95,6 +95,12 @@ Allows those with a passion for cooking to connect through a dedicated social me
     * User can log out
     * User can delete their account
 
+### Video Walkthrough
+
+Here's a walkthrough of implemented user stores:
+
+![](ezgif.com-gif-maker-6.gif)
+
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
