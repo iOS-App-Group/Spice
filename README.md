@@ -62,6 +62,14 @@ Allows those with a passion for cooking to connect through a dedicated social me
 * User can set the cuisine type when uploading a post
 * User can view recipes automatically configured to their set preferences during account creation
 
+
+### Video Walkthrough
+
+Here's a walkthrough of implemented user stores:
+
+![](ezgif.com-gif-maker-6.gif)
+
+
 ### 2. Screen Archetypes
 
 * Login Screen
@@ -94,12 +102,6 @@ Allows those with a passion for cooking to connect through a dedicated social me
     * User can change their profile picture, username, and password
     * User can log out
     * User can delete their account
-
-### Video Walkthrough
-
-Here's a walkthrough of implemented user stores:
-
-![](ezgif.com-gif-maker-6.gif)
 
 ### 3. Navigation
 
