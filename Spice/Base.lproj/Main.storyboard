@@ -80,7 +80,7 @@
                                 <rect key="frame" x="40" y="188" width="88" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="textColor"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qM1-zO-H14">
@@ -100,7 +100,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cw4-hL-xIw"/>
-                                    <segue destination="ce0-Zh-IBP" kind="presentation" identifier="signUpSegue" id="OJ4-pQ-j6U"/>
+                                    <segue destination="BsW-6C-QBd" kind="presentation" identifier="signUpSegue" modalPresentationStyle="fullScreen" id="kF8-n2-l8p"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -294,7 +294,7 @@
                                 <rect key="frame" x="40" y="188" width="98" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2n-Cf-dGt">
@@ -362,6 +362,19 @@
                                     <action selector="onSignUp:" destination="BsW-6C-QBd" eventType="touchUpInside" id="lVk-W3-EvI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAL-54-rBW">
+                                <rect key="frame" x="171" y="667" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onCancel:" destination="BsW-6C-QBd" eventType="touchUpInside" id="mhc-OP-3nN"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="exitSegue" modalPresentationStyle="fullScreen" id="kxe-ps-ubc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Buz-31-Hpo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -377,7 +390,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2Y-Im-7bu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="84"/>
+            <point key="canvasLocation" x="893" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AmV-PE-xGr">
@@ -395,24 +408,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxX-IN-1bP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1774" y="810"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="T3y-GD-MeF">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ce0-Zh-IBP" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yeQ-Yd-cx7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BsW-6C-QBd" kind="relationship" relationship="rootViewController" id="QGs-WD-9WZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="woe-4f-FSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="894" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nI7-pX-B4V">
@@ -450,7 +445,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yF9-aI-LQ4"/>
+        <segue reference="3xI-8l-xlm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
@@ -460,6 +455,9 @@
         <image name="plus.square.dashed" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
