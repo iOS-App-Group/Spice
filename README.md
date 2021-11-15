@@ -29,25 +29,25 @@ Allows those with a passion for cooking to connect through a dedicated social me
 
 **Required Must-have Stories**
 
-[ ] User sees app icon in home screen and styled launch screen
-[ ] User can sign up to create a new account (username, password, email, phone number)
-[ ] User can log in
-[ ] User can log out
-[ ] User stays logged in across restarts
-[ ] User can upload a photo, add an ingredient list, and recipe instructions
-[ ] User can either submit their post (through Parse) or cancel their submission
-[ ] User can view popular recipes on home page
-[ ] Users can add and view comments on a recipe
-[ ] Users can upvote/downvote a recipe
-[ ] User can tap a recipe photo to view a detailed recipe page
-[ ] User can view detailed information on a recipe (title, ingredient list, instructions)
-[ ] User can view another user's username, profile picture, and number of posts
-[ ] User can add a profile picture
-[ ] User can search for recipes by keyword or user 
-[ ] User can view detailed recipes from the Edamam API
-[ ] User can edit their profile picture
-[ ] User can change their username and password
-[ ] User can delete their account
+- [ ] User sees app icon in home screen and styled launch screen
+- [X] User can sign up to create a new account (username, password, email, phone number)
+- [X] User can log in
+- [ ] User can log out
+- [ ] User stays logged in across restarts
+- [ ] User can upload a photo, add an ingredient list, and recipe instructions
+- [X] User can either submit their post (through Parse) or cancel their submission
+- [ ] User can view popular recipes on home page
+- [ ] Users can add and view comments on a recipe
+- [ ] Users can upvote/downvote a recipe
+- [ ] User can tap a recipe photo to view a detailed recipe page
+- [ ] User can view detailed information on a recipe (title, ingredient list, instructions)
+- [ ] User can view another user's username, profile picture, and number of posts
+- [ ] User can add a profile picture
+- [ ] User can search for recipes by keyword or user 
+- [ ] User can view detailed recipes from the Edamam API
+- [ ] User can edit their profile picture
+- [ ] User can change their username and password
+- [ ] User can delete their account
 
 **Optional Nice-to-have Stories**
     
