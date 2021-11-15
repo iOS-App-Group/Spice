@@ -1,7 +1,7 @@
-Original App Design Project - README Template
+Original App Design Project
 ===
 
-# Staple
+# Spice
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -20,7 +20,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 - **Story:** Connects users with trending recipes and food inspiration. Users will be able to interact through the comments and voting system, which encourage a sense of community.
 - **Market:** Anyone interested in food and cooking can use this app. Users are able to search for specific interests based on cuisine and diet.
 - **Habit:** Users will open and use this app whenever they want to find or share recipe ideas and instructions. Users both consume (view recipes) and create (post recipes).
-- **Scope:** Staple has a focus on posting and viewing recipes. The main feed acts as a trending page which allows users to interact with each other by reacting to recipe titles and photos.
+- **Scope:** Spice has a focus on posting and viewing recipes. The main feed acts as a trending page which allows users to interact with each other by reacting to recipe titles and photos.
 
 
 ## Product Spec
@@ -29,25 +29,25 @@ Allows those with a passion for cooking to connect through a dedicated social me
 
 **Required Must-have Stories**
 
-* User sees app icon in home screen and styled launch screen
-* User can sign up to create a new account (username, password, email, phone number)
-* User can log in
-* User can log out
-* User stays logged in across restarts
-* User can upload a photo, add an ingredient list, and recipe instructions
-* User can either submit their post (through Parse) or cancel their submission
-* User can view popular recipes on home page
-* Users can add and view comments on a recipe
-* Users can upvote/downvote a recipe
-* User can tap a recipe photo to view a detailed recipe page
-* User can view detailed information on a recipe (title, ingredient list, instructions)
-* User can view another user's username, profile picture, and number of posts
-* User can add a profile picture
-* User can search for recipes by keyword or user 
-* User can view detailed recipes from the Edamam API
-* User can edit their profile picture
-* User can change their username and password
-* User can delete their account
+[ ] User sees app icon in home screen and styled launch screen
+[ ] User can sign up to create a new account (username, password, email, phone number)
+[ ] User can log in
+[ ] User can log out
+[ ] User stays logged in across restarts
+[ ] User can upload a photo, add an ingredient list, and recipe instructions
+[ ] User can either submit their post (through Parse) or cancel their submission
+[ ] User can view popular recipes on home page
+[ ] Users can add and view comments on a recipe
+[ ] Users can upvote/downvote a recipe
+[ ] User can tap a recipe photo to view a detailed recipe page
+[ ] User can view detailed information on a recipe (title, ingredient list, instructions)
+[ ] User can view another user's username, profile picture, and number of posts
+[ ] User can add a profile picture
+[ ] User can search for recipes by keyword or user 
+[ ] User can view detailed recipes from the Edamam API
+[ ] User can edit their profile picture
+[ ] User can change their username and password
+[ ] User can delete their account
 
 **Optional Nice-to-have Stories**
     
