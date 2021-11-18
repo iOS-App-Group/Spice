@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3C0EED73F1FA9034C92D4252 /* Pods_SpiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCE9AF3DB7615CF58297D76 /* Pods_SpiceTests.framework */; };
 		3F434AB4DAE649FB746E9E5B /* Pods_Spice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547B06F8F1C0A723AD0C1A8E /* Pods_Spice.framework */; };
+		D34443152745BF5000AC58B5 /* PersonalProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */; };
+		D34443172745C29700AC58B5 /* PersonalPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34443162745C29700AC58B5 /* PersonalPostsCell.swift */; };
 		D39258172741AE50003247D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39258162741AE50003247D1 /* AppDelegate.swift */; };
 		D39258192741AE50003247D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39258182741AE50003247D1 /* SceneDelegate.swift */; };
 		D392581E2741AE50003247D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392581C2741AE50003247D1 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		6CC70715DC4A9846D61201E5 /* Pods-Spice-SpiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spice-SpiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Spice-SpiceUITests/Pods-Spice-SpiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B42472B579EBF0060F3A7D9 /* Pods_Spice_SpiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spice_SpiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9186727D4B3A203DABFC6A8 /* Pods-SpiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTests.release.xcconfig"; path = "Target Support Files/Pods-SpiceTests/Pods-SpiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProfileViewController.swift; sourceTree = "<group>"; };
+		D34443162745C29700AC58B5 /* PersonalPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPostsCell.swift; sourceTree = "<group>"; };
 		D39258132741AE50003247D1 /* Spice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39258162741AE50003247D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D39258182741AE50003247D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 				D39258482741B655003247D1 /* FeedViewController.swift */,
 				D392584A2741B6D9003247D1 /* RegisterViewController.swift */,
 				D392584E2741C5B0003247D1 /* CreateViewController.swift */,
+				D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */,
+				D34443162745C29700AC58B5 /* PersonalPostsCell.swift */,
 			);
 			path = Spice;
 			sourceTree = "<group>";
@@ -421,6 +427,8 @@
 				D39258172741AE50003247D1 /* AppDelegate.swift in Sources */,
 				D39258492741B655003247D1 /* FeedViewController.swift in Sources */,
 				D39258192741AE50003247D1 /* SceneDelegate.swift in Sources */,
+				D34443152745BF5000AC58B5 /* PersonalProfileViewController.swift in Sources */,
+				D34443172745C29700AC58B5 /* PersonalPostsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
