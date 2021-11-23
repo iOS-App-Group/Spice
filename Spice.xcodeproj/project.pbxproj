@@ -13,7 +13,10 @@
 		D34443172745C29700AC58B5 /* PersonalPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34443162745C29700AC58B5 /* PersonalPostsCell.swift */; };
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		D38A10CC274C712E00D92EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38A10CB274C712E00D92EE8 /* Main.storyboard */; };
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -59,7 +62,10 @@
 		D34443162745C29700AC58B5 /* PersonalPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPostsCell.swift; sourceTree = "<group>"; };
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		D38A10CB274C712E00D92EE8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
