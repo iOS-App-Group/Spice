@@ -11,7 +11,10 @@
 		3F434AB4DAE649FB746E9E5B /* Pods_Spice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547B06F8F1C0A723AD0C1A8E /* Pods_Spice.framework */; };
 		D34443152745BF5000AC58B5 /* PersonalProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */; };
 		D34443172745C29700AC58B5 /* PersonalPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34443162745C29700AC58B5 /* PersonalPostsCell.swift */; };
+<<<<<<< Updated upstream
 		D38A10CC274C712E00D92EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38A10CB274C712E00D92EE8 /* Main.storyboard */; };
+=======
+>>>>>>> Stashed changes
 		D39258172741AE50003247D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39258162741AE50003247D1 /* AppDelegate.swift */; };
 		D39258192741AE50003247D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39258182741AE50003247D1 /* SceneDelegate.swift */; };
 		D39258202741AE51003247D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D392581F2741AE51003247D1 /* Assets.xcassets */; };
@@ -51,7 +54,10 @@
 		A9186727D4B3A203DABFC6A8 /* Pods-SpiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTests.release.xcconfig"; path = "Target Support Files/Pods-SpiceTests/Pods-SpiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProfileViewController.swift; sourceTree = "<group>"; };
 		D34443162745C29700AC58B5 /* PersonalPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPostsCell.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		D38A10CB274C712E00D92EE8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+=======
+>>>>>>> Stashed changes
 		D39258132741AE50003247D1 /* Spice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39258162741AE50003247D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D39258182741AE50003247D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
