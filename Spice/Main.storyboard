@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAt-OW-pKQ">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAt-OW-pKQ">
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAt-OW-pKQ">
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
@@ -87,7 +91,10 @@
                                 <state key="normal" title="Button"/>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
 =======
+=======
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
                                 <buttonConfiguration key="configuration" style="filled" title="Sign in">
@@ -208,7 +215,10 @@
                                 <state key="normal" title="Button"/>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
 =======
+=======
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
                                 <buttonConfiguration key="configuration" style="filled" title="Post">
@@ -273,7 +283,11 @@
             <objects>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
                 <viewController id="qZm-g1-hVs" customClass="PersonalProfileViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController id="qZm-g1-hVs" customClass="PersonalProfileViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
                 <viewController id="qZm-g1-hVs" customClass="PersonalProfileViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
@@ -297,7 +311,11 @@
                                 <cells>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonalPostsCell" id="vUm-ic-CL3" customClass="PersonalPostsCell" customModule="flix" customModuleProvider="target">
+=======
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonalPostsCell" id="vUm-ic-CL3" customClass="PersonalPostsCell" customModule="Spice" customModuleProvider="target">
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonalPostsCell" id="vUm-ic-CL3" customClass="PersonalPostsCell" customModule="Spice" customModuleProvider="target">
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
@@ -380,7 +398,10 @@
                                 <state key="normal" title="Button"/>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
 =======
+=======
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
                                 <buttonConfiguration key="configuration" style="filled" title="Log out">
@@ -388,6 +409,9 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
+=======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
@@ -400,7 +424,10 @@
                                 <state key="normal" title="Button"/>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
 =======
+=======
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
                                 <buttonConfiguration key="configuration" style="plain" title="Delete account">
@@ -408,6 +435,9 @@
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
+=======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
@@ -541,7 +571,10 @@
                                 <state key="normal" title="Button"/>
 <<<<<<< Updated upstream:Spice/Main.storyboard
 <<<<<<< Updated upstream:Spice/Main.storyboard
+<<<<<<< Updated upstream:Spice/Main.storyboard
 =======
+=======
+>>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
 =======
 >>>>>>> Stashed changes:Spice/Base.lproj/Main.storyboard
                                 <buttonConfiguration key="configuration" style="filled" title="Sign up">
