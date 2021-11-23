@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< Updated upstream
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAt-OW-pKQ">
->>>>>>> Stashed changes
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAt-OW-pKQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -37,7 +33,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,10 +77,6 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign in">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Fh-Nf-VWy"/>
                                 </connections>
@@ -101,9 +93,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign up">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cw4-hL-xIw"/>
                                     <segue destination="BsW-6C-QBd" kind="show" identifier="signUpSegue" id="50l-eb-O9V"/>
@@ -127,7 +116,7 @@
         <!--Feed View Controller-->
         <scene sceneID="BFH-FG-ztU">
             <objects>
-                <viewController id="BUA-u6-BOY" customClass="FeedViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BUA-u6-BOY" customClass="FeedViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OLK-zc-Vil">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +132,7 @@
         <!--Create View Controller-->
         <scene sceneID="V4M-Dm-qqK">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="7w0-uP-NbV" customClass="CreateViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7w0-uP-NbV" customClass="CreateViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W5Y-vw-Aoz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,10 +188,6 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Post">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="7w0-uP-NbV" eventType="touchUpInside" id="NmF-FK-jLc"/>
                                 </connections>
@@ -258,7 +243,7 @@
         <!--Personal Profile View Controller-->
         <scene sceneID="H73-Rh-XnI">
             <objects>
-                <viewController id="qZm-g1-hVs" customClass="PersonalProfileViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qZm-g1-hVs" customClass="PersonalProfileViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0EL-db-2eT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +259,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonalPostsCell" id="vUm-ic-CL3" customClass="PersonalPostsCell" customModule="Spice" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonalPostsCell" id="vUm-ic-CL3" customClass="PersonalPostsCell" customModule="flix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yHR-ZD-iIu">
@@ -349,10 +334,6 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Log out">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-cd-g4S">
                                 <rect key="frame" x="40" y="745" width="335" height="38"/>
@@ -360,10 +341,6 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Delete account">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
-                                </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NWh-U4-YS3">
                                 <rect key="frame" x="87" y="363" width="240" height="240"/>
@@ -422,7 +399,7 @@
         <!--Register View Controller-->
         <scene sceneID="GLt-X2-2IC">
             <objects>
-                <viewController id="BsW-6C-QBd" customClass="RegisterViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BsW-6C-QBd" customClass="RegisterViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcw-qY-omN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -492,10 +469,6 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign up">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="onSignUp:" destination="BsW-6C-QBd" eventType="touchUpInside" id="lVk-W3-EvI"/>
                                 </connections>
@@ -608,9 +581,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
