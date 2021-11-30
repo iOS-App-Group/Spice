@@ -38,10 +38,6 @@ class RegisterViewController: UIViewController {
         }
     }
     
-    @IBAction func onCancel(_ sender: Any) {
-        self.performSegue(withIdentifier: "exitSegue", sender: nil)
-    }
-    
 
     /*
     // MARK: - Navigation
