@@ -7,11 +7,11 @@
 
 import UIKit
 import Parse
-import AlamofireImage
+import Alamofire
 
 class PersonalProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    //@IBOutlet weak var profileView: UIImageView!
+    @IBOutlet weak var avatarView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postCountLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -25,9 +25,8 @@ class PersonalProfileViewController: UIViewController, UICollectionViewDataSourc
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        usernameLabel.text = PFUser.current()?.username
-        
-        let query = PFQuery(className: "recipes")
+        let query = PFQuery(className: "Recipes")
+        query.includeKey("author")
         query.whereKey("author", equalTo: PFUser.current())
         query.findObjectsInBackground { [self] (objects: [PFObject]?, error: Error?) in
             if let error = error {
@@ -35,7 +34,7 @@ class PersonalProfileViewController: UIViewController, UICollectionViewDataSourc
                 print(error.localizedDescription)
             } else if let objects = objects {
                 // the find succeeded
-                postCountLabel.text = String (objects.count)
+                postCountLabel.text = String (objects.count) + " recipes"
             }
         }
     }
@@ -43,13 +42,33 @@ class PersonalProfileViewController: UIViewController, UICollectionViewDataSourc
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated) // after finish composing, want to refresh
         
-        let query = PFQuery(className: "Recipes")
-        query.includeKey("author") // if didn't have include key, would only have pointer
-        query.limit = 20
+        usernameLabel.text = PFUser.current()?.username
         
+        let avatarFile = PFUser.current()?["avatar"] as! PFFileObject
+        let avatarUrlString = avatarFile.url!
+        let avatarUrl = URL(string: avatarUrlString)!
+        avatarView.af_setImage(withURL: avatarUrl)
+        
+         
+        // following commented out code queues posts by all authors
+//        let query = PFQuery(className: "Recipes")
+//        query.includeKey("author") // if didn't have include key, would only have pointer
+//        query.limit = 20
+//
+//        query.findObjectsInBackground { (recipes, error) in
+//            if recipes != nil {
+//                self.recipes = recipes!
+//                self.collectionView.reloadData()
+//            }
+//        }
+        
+        let query = PFQuery(className: "Recipes")
+        query.includeKey("author")
+        query.whereKey("author", equalTo: PFUser.current())
         query.findObjectsInBackground { (recipes, error) in
             if recipes != nil {
                 self.recipes = recipes!
+                self.recipes = self.recipes.reversed() // order from most recently created
                 self.collectionView.reloadData()
             }
         }
@@ -72,14 +91,24 @@ class PersonalProfileViewController: UIViewController, UICollectionViewDataSourc
         return cell
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "recipeDetailsSegue" {
+            // find the selected recipe
+            let cell = sender as! UICollectionViewCell
+            let indexPath = collectionView.indexPath(for: cell)!
+            let recipe = recipes[indexPath.row]
+            
+            // pass the selected recipe to the details view controller
+            let detailsViewController = segue.destination as! RecipeDetailsViewController // need to cast to RecipeDetailsViewController to give access to "recipe" property
+            detailsViewController.recipe = recipe
+        }
     }
-    */
-
+    
 }
