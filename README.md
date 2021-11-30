@@ -67,7 +67,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 
 Here's a walkthrough of implemented user stores:
 
-![](ezgif.com-gif-maker-6.gif)
+![](ezgif.com-gif-maker-7.gif)
 
 
 ### 2. Screen Archetypes
