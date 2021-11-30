@@ -11,6 +11,7 @@
 		3F434AB4DAE649FB746E9E5B /* Pods_Spice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547B06F8F1C0A723AD0C1A8E /* Pods_Spice.framework */; };
 		D34443152745BF5000AC58B5 /* PersonalProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */; };
 		D34443172745C29700AC58B5 /* PersonalPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34443162745C29700AC58B5 /* PersonalPostsCell.swift */; };
+		D36C63132755C74A00C60C58 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C63122755C74A00C60C58 /* RecipeDetailsViewController.swift */; };
 		D39258172741AE50003247D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39258162741AE50003247D1 /* AppDelegate.swift */; };
 		D39258192741AE50003247D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39258182741AE50003247D1 /* SceneDelegate.swift */; };
 		D392581E2741AE50003247D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392581C2741AE50003247D1 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		A9186727D4B3A203DABFC6A8 /* Pods-SpiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpiceTests.release.xcconfig"; path = "Target Support Files/Pods-SpiceTests/Pods-SpiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProfileViewController.swift; sourceTree = "<group>"; };
 		D34443162745C29700AC58B5 /* PersonalPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPostsCell.swift; sourceTree = "<group>"; };
+		D36C63122755C74A00C60C58 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		D39258132741AE50003247D1 /* Spice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39258162741AE50003247D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D39258182741AE50003247D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				D392584E2741C5B0003247D1 /* CreateViewController.swift */,
 				D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */,
 				D34443162745C29700AC58B5 /* PersonalPostsCell.swift */,
+				D36C63122755C74A00C60C58 /* RecipeDetailsViewController.swift */,
 			);
 			path = Spice;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D39258472741B637003247D1 /* LoginViewController.swift in Sources */,
+				D36C63132755C74A00C60C58 /* RecipeDetailsViewController.swift in Sources */,
 				D392584B2741B6D9003247D1 /* RegisterViewController.swift in Sources */,
 				D392584F2741C5B0003247D1 /* CreateViewController.swift in Sources */,
 				D39258172741AE50003247D1 /* AppDelegate.swift in Sources */,
