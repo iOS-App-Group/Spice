@@ -32,7 +32,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 - [ ] User sees app icon in home screen and styled launch screen
 - [X] User can sign up to create a new account (username, password, email, phone number)
 - [X] User can log in
-- [ ] User can log out
+- [X] User can log out
 - [ ] User stays logged in across restarts
 - [X] User can upload a photo, add an ingredient list, and recipe instructions
 - [X] User can either submit their post (through Parse) or cancel their submission
@@ -43,12 +43,11 @@ Allows those with a passion for cooking to connect through a dedicated social me
 - [X] User can view detailed information on a recipe (title, ingredient list, instructions)
 - [X] User can view personal username, profile picture, and number of posts
 - [ ] User can view another user's username, profile picture, and number of posts
-- [ ] User can add a profile picture
+- [X] User can add a profile picture
 - [ ] User can search for recipes by keyword or user 
-- [ ] User can view detailed recipes from the Edamam API
-- [ ] User can edit their profile picture
-- [ ] User can change their username and password
-- [ ] User can delete their account
+- [X] User can edit their profile picture
+- [X] User can change their username and password
+- [X] User can delete their account
 
 **Optional Nice-to-have Stories**
     
@@ -62,6 +61,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 * User can select their cuisine preferences when making an account
 * User can set the cuisine type when uploading a post
 * User can view recipes automatically configured to their set preferences during account creation
+* User can view detailed recipes from the Edamam API
 
 
 ### Video Walkthrough
