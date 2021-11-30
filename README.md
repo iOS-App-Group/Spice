@@ -43,7 +43,6 @@ Allows those with a passion for cooking to connect through a dedicated social me
 - [X] User can view detailed information on a recipe (title, ingredient list, instructions)
 - [X] User can view personal username, profile picture, and number of posts
 - [ ] User can view another user's username, profile picture, and number of posts
-- [X] User can add a profile picture
 - [ ] User can search for recipes by keyword or user 
 - [X] User can edit their profile picture
 - [X] User can change their username and password
