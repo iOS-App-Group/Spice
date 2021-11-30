@@ -24,6 +24,7 @@
 		D39258492741B655003247D1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39258482741B655003247D1 /* FeedViewController.swift */; };
 		D392584B2741B6D9003247D1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D392584A2741B6D9003247D1 /* RegisterViewController.swift */; };
 		D392584F2741C5B0003247D1 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D392584E2741C5B0003247D1 /* CreateViewController.swift */; };
+		D3D18CBE2755EFEE0062D591 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D18CBD2755EFED0062D591 /* SettingsViewController.swift */; };
 		F49C6FD5FCCC6155DA918265 /* Pods_Spice_SpiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B42472B579EBF0060F3A7D9 /* Pods_Spice_SpiceUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		D39258482741B655003247D1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D392584A2741B6D9003247D1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D392584E2741C5B0003247D1 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		D3D18CBD2755EFED0062D591 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D55758547E769DF56A9E094D /* Pods-Spice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spice.debug.xcconfig"; path = "Target Support Files/Pods-Spice/Pods-Spice.debug.xcconfig"; sourceTree = "<group>"; };
 		E4FE3D58DF23C4C583DA97D5 /* Pods-Spice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spice.release.xcconfig"; path = "Target Support Files/Pods-Spice/Pods-Spice.release.xcconfig"; sourceTree = "<group>"; };
 		E9BF1A7085C3B3D3B75B5810 /* Pods-Spice-SpiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spice-SpiceUITests.release.xcconfig"; path = "Target Support Files/Pods-Spice-SpiceUITests/Pods-Spice-SpiceUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				D34443142745BF5000AC58B5 /* PersonalProfileViewController.swift */,
 				D34443162745C29700AC58B5 /* PersonalPostsCell.swift */,
 				D36C63122755C74A00C60C58 /* RecipeDetailsViewController.swift */,
+				D3D18CBD2755EFED0062D591 /* SettingsViewController.swift */,
 			);
 			path = Spice;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				D39258472741B637003247D1 /* LoginViewController.swift in Sources */,
 				D36C63132755C74A00C60C58 /* RecipeDetailsViewController.swift in Sources */,
 				D392584B2741B6D9003247D1 /* RegisterViewController.swift in Sources */,
+				D3D18CBE2755EFEE0062D591 /* SettingsViewController.swift in Sources */,
 				D392584F2741C5B0003247D1 /* CreateViewController.swift in Sources */,
 				D39258172741AE50003247D1 /* AppDelegate.swift in Sources */,
 				D39258492741B655003247D1 /* FeedViewController.swift in Sources */,

@@ -444,6 +444,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="avatarView" destination="4nc-bk-CRd" id="Dew-TI-dOq"/>
                         <outlet property="collectionView" destination="pOI-2K-wBO" id="HlJ-fI-jdZ"/>
                         <outlet property="postCountLabel" destination="gmq-wK-PWz" id="nP8-pj-NXp"/>
                         <outlet property="usernameLabel" destination="wzz-Jy-WAw" id="Mg7-Yy-VsG"/>
@@ -453,18 +454,22 @@
             </objects>
             <point key="canvasLocation" x="2669.5652173913045" y="1532.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="39k-tD-8eR">
             <objects>
-                <viewController id="jWp-Fb-gDS" sceneMemberID="viewController">
+                <viewController id="jWp-Fb-gDS" customClass="SettingsViewController" customModule="Spice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gZL-2y-4rC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NWh-U4-YS3">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NWh-U4-YS3">
                                 <rect key="frame" x="87" y="328.5" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eWT-La-Na1" appends="YES" id="5Ld-SR-mvo"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new username..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekz-RC-u25">
                                 <rect key="frame" x="40" y="135" width="335" height="34"/>
@@ -501,6 +506,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSave:" destination="jWp-Fb-gDS" eventType="touchUpInside" id="vfn-Cb-FCz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-cd-g4S">
                                 <rect key="frame" x="126" y="731" width="163" height="38"/>
@@ -512,6 +520,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onDeleteAccount:" destination="jWp-Fb-gDS" eventType="touchUpInside" id="utx-2W-14c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jbl-5h-jUD"/>
@@ -519,10 +530,24 @@
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="2U3-Mn-ACG">
-                        <barButtonItem key="rightBarButtonItem" title="Log out" id="skW-SM-3AF"/>
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="skW-SM-3AF">
+                            <connections>
+                                <action selector="onLogOut:" destination="jWp-Fb-gDS" id="2ry-3n-82M"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="avatarView" destination="NWh-U4-YS3" id="c05-pl-ZUG"/>
+                        <outlet property="passwordTextField" destination="Uze-wg-EXs" id="QzX-le-rmN"/>
+                        <outlet property="usernameTextField" destination="ekz-RC-u25" id="2KR-EQ-L5y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y16-Hg-QHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eWT-La-Na1">
+                    <connections>
+                        <action selector="onAvatarSelect:" destination="jWp-Fb-gDS" id="qdP-Wb-yoE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2669.5652173913045" y="2243.9732142857142"/>
         </scene>
@@ -571,7 +596,7 @@
                                 <rect key="frame" x="40" y="294" width="335" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuu-7x-9GN">
                                 <rect key="frame" x="40" y="351" width="85" height="24"/>
@@ -584,7 +609,7 @@
                                 <rect key="frame" x="40" y="383" width="335" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAt-gu-ie6">
                                 <rect key="frame" x="40" y="445" width="47" height="24"/>
@@ -597,7 +622,7 @@
                                 <rect key="frame" x="40" y="477" width="335" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ym-lW-8pN">
                                 <rect key="frame" x="40" y="534" width="129" height="24"/>
@@ -610,7 +635,7 @@
                                 <rect key="frame" x="40" y="566" width="335" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2G-s5-dSy">
                                 <rect key="frame" x="40" y="630" width="335" height="38"/>
@@ -704,7 +729,7 @@
         <!--Navigation Controller-->
         <scene sceneID="uYC-pf-4h4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eAt-OW-pKQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eAt-OW-pKQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fF8-0U-v9b">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

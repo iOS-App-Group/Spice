@@ -7,11 +7,11 @@
 
 import UIKit
 import Parse
-import AlamofireImage
+import Alamofire
 
 class PersonalProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    //@IBOutlet weak var profileView: UIImageView!
+    @IBOutlet weak var avatarView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postCountLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -25,8 +25,6 @@ class PersonalProfileViewController: UIViewController, UICollectionViewDataSourc
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        usernameLabel.text = PFUser.current()?.username
- 
         let query = PFQuery(className: "Recipes")
         query.includeKey("author")
         query.whereKey("author", equalTo: PFUser.current())
@@ -44,6 +42,14 @@ class PersonalProfileViewController: UIViewController, UICollectionViewDataSourc
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated) // after finish composing, want to refresh
         
+        usernameLabel.text = PFUser.current()?.username
+        
+        let avatarFile = PFUser.current()?["avatar"] as! PFFileObject
+        let avatarUrlString = avatarFile.url!
+        let avatarUrl = URL(string: avatarUrlString)!
+        avatarView.af_setImage(withURL: avatarUrl)
+        
+         
         // following commented out code queues posts by all authors
 //        let query = PFQuery(className: "Recipes")
 //        query.includeKey("author") // if didn't have include key, would only have pointer
