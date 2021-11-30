@@ -21,6 +21,16 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Configure borders for TextView
+        // Code taken from Ryan Hsu
+        // https://www.richardhsu.me/posts/2015/01/17/textview-border.html
+        let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+        ingredientsText.layer.borderWidth = 0.5
+        ingredientsText.layer.borderColor = borderColor.cgColor
+        ingredientsText.layer.cornerRadius = 5.0
+        instructionsText.layer.borderWidth = 0.5
+        instructionsText.layer.borderColor = borderColor.cgColor
+        instructionsText.layer.cornerRadius = 5.0
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
@@ -28,8 +38,8 @@ class CreateViewController: UIViewController, UIImagePickerControllerDelegate, U
         let recipe = PFObject(className: "Recipes")
         
         recipe["title"] = titleField.text!
-        //recipe["ingredients"] = ingredientsText PFObject may not have type text view
-        //recipe["instructions"] = instructionsText
+        recipe["ingredients"] = ingredientsText.text
+        recipe["instructions"] = instructionsText.text
         recipe["author"] = PFUser.current()!
         
         let imageData = imageView.image!.pngData() // imageView.image is reduced image saved from camera (see in imagePickerController(), now saved as png

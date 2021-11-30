@@ -11,7 +11,7 @@ import AlamofireImage
 
 class PersonalProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    @IBOutlet weak var profileView: UIImageView!
+    //@IBOutlet weak var profileView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postCountLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -24,6 +24,20 @@ class PersonalProfileViewController: UIViewController, UICollectionViewDataSourc
         // Do any additional setup after loading the view.
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        usernameLabel.text = PFUser.current()?.username
+        
+        let query = PFQuery(className: "recipes")
+        query.whereKey("author", equalTo: PFUser.current())
+        query.findObjectsInBackground { [self] (objects: [PFObject]?, error: Error?) in
+            if let error = error {
+                // Log details of the failure
+                print(error.localizedDescription)
+            } else if let objects = objects {
+                // the find succeeded
+                postCountLabel.text = String (objects.count)
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
