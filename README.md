@@ -34,13 +34,14 @@ Allows those with a passion for cooking to connect through a dedicated social me
 - [X] User can log in
 - [ ] User can log out
 - [ ] User stays logged in across restarts
-- [ ] User can upload a photo, add an ingredient list, and recipe instructions
+- [X] User can upload a photo, add an ingredient list, and recipe instructions
 - [X] User can either submit their post (through Parse) or cancel their submission
 - [ ] User can view popular recipes on home page
 - [ ] Users can add and view comments on a recipe
 - [ ] Users can upvote/downvote a recipe
-- [ ] User can tap a recipe photo to view a detailed recipe page
-- [ ] User can view detailed information on a recipe (title, ingredient list, instructions)
+- [X] User can tap a recipe photo to view a detailed recipe page
+- [X] User can view detailed information on a recipe (title, ingredient list, instructions)
+- [X] User can view personal username, profile picture, and number of posts
 - [ ] User can view another user's username, profile picture, and number of posts
 - [ ] User can add a profile picture
 - [ ] User can search for recipes by keyword or user 
