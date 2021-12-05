@@ -29,7 +29,7 @@ Allows those with a passion for cooking to connect through a dedicated social me
 
 **Required Must-have Stories**
 
-- [ ] User sees app icon in home screen and styled launch screen
+- [X] User sees app icon in home screen and styled launch screen
 - [X] User can sign up to create a new account (username, password, email, phone number)
 - [X] User can log in
 - [X] User can log out
@@ -67,7 +67,8 @@ Allows those with a passion for cooking to connect through a dedicated social me
 
 Here's a walkthrough of implemented user stores:
 
-![](ezgif.com-gif-maker-7.gif)
+![](   ![ezgif com-gif-maker](https://user-images.githubusercontent.com/61980344/144768406-fba138c0-fd98-446c-aebb-a117f80cafcd.gif)
+ )
 
 
 ### 2. Screen Archetypes
